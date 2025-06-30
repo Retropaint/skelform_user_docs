@@ -15,5 +15,5 @@ following relevant config file:
     "plugins": [
         "https://plugins.dprint.dev/markdown-0.18.0.wasm",
     ]
-}```
+}
 ````
