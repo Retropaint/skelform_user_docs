@@ -1,6 +1,14 @@
 # SkelForm User Documentation
 
-Made with [mdBook](https://github.com/rust-lang/mdBook).
+User documentation for [SkelForm](https://github.com/Retropaint/SkelForm), made with [mdBook](https://github.com/rust-lang/mdBook).
+
+## Building
+
+[Install mdBook](https://rust-lang.github.io/mdBook/guide/installation.html).
+
+Then, run `mdbook build`.
+
+This will create the distributable `book` dir, which can be published to web (and is required for native SkelForm distributions).
 
 ## Formatting
 
