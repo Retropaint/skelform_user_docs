@@ -37,8 +37,9 @@ Ctrl/Cmd while dragging.
 
 Bones can be connected to others to form joints and the like.
 
-Create another bone, then drag either bone to the other. Once released, the bone
-you held will be the child of the other.
+Create another bone, then drag either bone to the other.
+
+Once released, the bone you held will be the child of the other.
 
 ![highlight_bone](highlight_bone.png)
 
@@ -46,10 +47,11 @@ you held will be the child of the other.
 
 Child bones inherit their parent's properties.
 
-Example:
-* Child position = (2, 2)
-* Parent position =  (3, 3)
-* Final child position = child + parent = (5, 5)
+**Example**:
+
+- Child position = (2, 2)
+- Parent position = (3, 3)
+- Final child position = child + parent = (5, 5)
 
 For scale, the field is multiplied by the parent.
 
@@ -62,12 +64,11 @@ Child bones will 'orbit' their parent when the parent is rotated.
 
 This can be used to set parents as the 'pivot' to their children.
 
-Example: A foot is the child of the knee. When the knee rotates, the foot
+**Example**: A foot is the child of the knee. When the knee rotates, the foot
 'orbits' and correctly stays in place.
 
 ## Conclusion
 
-By now you have hopefully gotten a good idea of how bones work. Play around wtih
-them a little more and see what you can make!
+Play around with bones and textures, and try to create a rig.
 
 Once you are ready, let's start [animating](./animating.md) it!
