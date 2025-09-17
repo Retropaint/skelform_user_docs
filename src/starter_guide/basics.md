@@ -5,21 +5,11 @@ tour around the editor.
 
 ## Table of Contents
 
-- [Help Light](#help-light)
 - [Moving & Zooming the Camera](#moving--zooming-the-camera)
 - [Your First Bone](#your-first-bone)
 - [Parent & Child Bones](#parent--child-bones)
 - [Parent-Child Bone Inheritance](#parent-child-bone-inheritance)
 - [Pivots & Hinges](#pivots--hinges)
-
-## Help Light
-
-Upon opening the editor for the first time, you may see a yellow highlight on
-the <strong>New Bone</strong> button.
-
-This is intended for those that prefer a hands-on guide within the editor. For
-the sake of this written guide, let's disable it from
-<strong>Help</strong> > <strong>Stop Help Light</strong>.
 
 ## Moving & Zooming the Camera
 
@@ -53,17 +43,10 @@ Windows/Linux, <strong>CMD</strong> on Mac).
 Your only bone is acting on it's own, but it can also be connected to others to
 form joints and the like.
 
-Create another bone, and you will see a new <strong>Drag</strong> button. This
-will toggle to a mode that allows dragging bones around the list. Drag a bone on
-top of another and watch it highlight:
+Create another bone, then drag either bone to the other. Once released, the bone
+you held will be a child of the other.
 
 ![highlight_bone](highlight_bone.png)
-
-Release the mouse, and now you have a parent bone and a child bone!
-
-Switch back to <strong>Edit</strong> mode (where <strong>Drag</strong> was), and
-select the parent bone. As you edit it in any way, the child bone will be
-affected as well.
 
 ## Parent-Child Bone Inheritance
 
@@ -72,9 +55,9 @@ if a parent's position is (2, 2), for example, then the bone's position will be
 it's own, plus (2, 2).
 
 This also means the child bone's properties are relative to the parent. If a
-child bone's position is set to (0, 0), for example, this will
-<em>not</em> necessarily position it to the center of the grid. Instead, it will
-be exactly where it's parent is.
+child bone's position is set to (0, 0), for example, this will <em>not</em>
+necessarily position it to the center of the grid. Instead, it will be exactly
+where it's parent is.
 
 ## Pivots & Hinges
 
