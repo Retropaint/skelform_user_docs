@@ -1,8 +1,7 @@
 # Summary
 
-[Introduction](./introduction.md) 
-[Installation](./installation.md)
-
+- [Introduction](./introduction.md) 
+- [Installation](./installation.md)
 - [Starter Guide](./starter_guide/main.md)
   - [Basics](./starter_guide/basics.md)
   - [Animating](./starter_guide/animating.md)
