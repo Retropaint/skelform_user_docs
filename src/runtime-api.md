@@ -7,12 +7,7 @@ could have a different API that is not supported.
 For _developing_ runtimes, please see the
 [Developer Documentation](https://skelform.org/dev-docs).
 
-## Table of Contents
-
-- [Installation](#installation)
-- [The API](#the-api)
-
-## The API
+## Functions
 
 - [Function `load()`](#function-load)
 - [Function `formatFrame()`](#function-format-frame)
@@ -23,12 +18,12 @@ For _developing_ runtimes, please see the
 <h3 id="function-load"><a class="header" href="#function-load">Function <code>load(filePath)</code></a></h3>
 
 ```go
-armature, texture := skelform_ebiten.load("skellington.skf")
+root, texture := skelform_ebiten.load("skellington.skf")
 ```
 
-This function will load the SkelForm file that is provided.
+Loads the SkelForm file that is provided.
 
-It will return back the armature and texture. Don't lose them!
+Returns the root (containing the armature, among other data) and texture.
 
 <h3 id="function-format-frame"><a class="header" href="#function-format-frame">Function <code>formatFrame(int, animation, reverse, loop)</code></a></h3>
 
@@ -39,7 +34,7 @@ frame := formatFrame(20, armature.Animations[0], false, true)
 A helper function to format the provided number into a usable frame for the
 animation, with options like reversing or looping.
 
-If first animation has 14 frames, `frame` will be 6 (since loop is true)
+If first animation has 14 frames, `frame` will be 6 (since loop is true).
 
 `frame` will be used later for `animate()`.
 
@@ -52,10 +47,13 @@ frame := timeFrame(time.Duration(), armature.Animations[0], false, true)
 A helper function to format the provided time into a usable frame for the
 animation, with the same options as `formatFrame()`:
 
-Assuming `time.Duration()` is 0.5s, the animation is 60 fps, and animation is 60
-frames long, `frame` will be 30.
+Assuming:
 
-`frame` will be used later for `animate()`.
+- `time.Duration()` is 0.5s
+- Animation is 60 FPS
+- Animation is 60 frames long
+
+`frame` will be 30.
 
 <h3 id="function-animate"><a class="header" href="#function-animate">Function <code>animate(armature, animations, frames, options)</code></a></h3>
 
@@ -68,8 +66,9 @@ drawnBones := animate(armature, [armature.Animations[0]], [frame], animOptions)
 ```
 
 Takes the armature, as well as the animation(s) and frame(s). The bones in the
-armature are then processed accordingly, but it will also return a new set of
-bones to be drawn via `draw()`.
+armature are then processed accordingly.
+
+Returns a new set of bones to be later drawn via `draw()`.
 
 Additional options may be given such as speed, transform modifiers, and blending
 (per animation).
