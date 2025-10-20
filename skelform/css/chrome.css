@@ -699,3 +699,7 @@ html:not(.sidebar-resizing) .sidebar {
     /* mdbook's margin for h2 is way too large. */
     margin: 10px;
 }
+
+.play-button {
+    /* display: none !important; */
+}

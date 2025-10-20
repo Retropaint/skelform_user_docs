@@ -358,8 +358,8 @@
     --warning-border: #ff8e00;
 
     --table-border-color: hsl(226, 23%, 16%);
-    --table-header-bg: hsl(226, 23%, 31%);
-    --table-alternate-bg: hsl(226, 23%, 14%);
+    --table-header-bg: rgb(61, 47, 85);
+    --table-alternate-bg: rgb(41, 31, 59);
 
     --searchbar-border-color: #aaa;
     --searchbar-bg: #aeaec6;
