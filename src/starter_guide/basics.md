@@ -7,6 +7,7 @@ tour around the editor.
 
 - [Moving & Zooming the Camera](#moving--zooming-the-camera)
 - [Your First Bone](#your-first-bone)
+- [Adding a Texture (and Style)](#adding-a-texture-and-style)
 - [Parent & Child Bones](#parent--child-bones)
   - [Parent-Child Bone Inheritance](#parent-child-bone-inheritance)
   - [Pivots & Hinges](#pivots--hinges)
@@ -33,23 +34,50 @@ being edited is based on the top-left bar's selection (<strong>Move</strong>,
 The camera can still be moved by holding Ctrl/CMD while dragging. This is only
 required if a bone is selected.
 
+## Adding a Texture (and Style)
+
+The bone is invisible right now, and all you see is the green point that
+represents it's center.
+
+To give this bone a texture, we'll need a Style. Styles are groups of textures,
+which can be used later to create outfits or skins. For now, we'll just use one.
+
+To add a Style, click on the `Styles` dropdown next to `New Bone`, or in the
+bone panel. Click `[Setup]` within to open up the Styles modal.
+
+[styles modal img]
+
+From here, click on `New Style` and give it a name. Click `Import` next to
+Texture when it appears, and select any image to be used.
+
+After importing the image, the Assigned Bones section will show all bones and
+what texture they're using (based on index). Since your bone isn't using any,
+click on it (or drag the texture to it) to assign it.
+
+[Assigned Bone img]
+
+Close the Styles modal, and you should now see your bone with given texture.
+
 ## Parent & Child Bones
 
-Bones can be connected to others to form joints and the like.
+Bones can be children or parents of one another. This affects how they are
+transformed, which will be useful for joints and such.
 
 **Example:**
 
 - shoulder -> forearm -> wrist
 - neck -> head
 
-Create another bone, then drag either bone to the other:
+Create another bone, give it a texture (as in the
+[above step](#adding-a-texture-and-style)), then drag either bone to the other:
 
 ![highlight_bone](highlight_bone.png)
 
 Once released, the bone you held will be the child of the other!
 
-Changing the parent in any way will affect the child as well. This is easier to
-see if the bones are textured.
+Changing the parent in any way will affect the child as well. If both bones are
+textured, this is easy to see. Play with the parent to see how the child
+behaves!
 
 ### Parent-Child Bone Inheritance
 
