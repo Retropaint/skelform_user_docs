@@ -19,4 +19,4 @@ If you see a screen like this, then all is good!
 
 ![start_screen](start_screen.png)
 
-Let's get started and go through the [basics](./basics.md).
+Let's get started and go through the [basics](./starter-guide/basics.md).
