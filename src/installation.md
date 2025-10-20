@@ -1,7 +1,7 @@
 # Before You Download...
 
 ...check out the
-<a href="https://retropaint.github.io/skelform_web/" target="_blank">Web
+<a href="https://skelform.org/editor" target="_blank">Web
 version</a> , which does not require downloading!
 
 Otherwise, read on.
