@@ -4,7 +4,7 @@ For this section we'll use [pygame](https://www.pygame.org/wiki/GettingStarted),
 but any of the [supported engines](https://skelform.org#runtimes) will do
 provided you understand the language and basics.
 
-_Note: this section assumes you have a basic understanding of using the command
+_This section assumes you have a basic understanding of using the command
 prompt and/or terminal. Engines with a graphical editor are not supported at the
 time of writing._
 
