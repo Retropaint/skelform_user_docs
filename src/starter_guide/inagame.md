@@ -13,6 +13,7 @@ time of writing._
 - [Setup](#setup)
 - [Loading the Armature](#loading-the-armature)
 - [Animating & Drawing](#animating--drawing)
+- [Full Setup](#full-setup)
 
 ## Setup
 
