@@ -1,3 +1,9 @@
+<style>
+  .content img {
+    width: 100%;
+  }
+</style>
+
 # Animating
 
 In the [previous](./basics.md) section, we went over the basics with bones and
@@ -69,5 +75,4 @@ recording edits and adjusting keyframes. Realistically however, an animation
 will contain lots of them. Try to make an expressive animation while keeping the
 keyframes organized!
 
-Next, we'll add your armature and play it's animations in
-pygame. Let's get it [runnin'](./inagame.md)!
+[That's all, folks!](./finale.md)

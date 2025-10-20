@@ -39,24 +39,26 @@ required if a bone is selected.
 The bone is invisible right now, and all you see is the green point that
 represents it's center.
 
-To give this bone a texture, we'll need a Style. Styles are groups of textures,
-which can be used later to create outfits or skins. For now, we'll just use one.
+To give this bone a texture we'll need a Style, which is a group of textures.
+Multiple can be made for outfits and skins, but we'll just use one for now.
 
 To add a Style, click on the `Styles` dropdown next to `New Bone`, or in the
-bone panel. Click `[Setup]` within to open up the Styles modal.
+bone panel. Click `[Setup]` within to open up the Styles modal:
 
-[styles modal img]
+![styles_modal](styles_modal.png)
 
 From here, click on `New Style` and give it a name. Click `Import` next to
 Texture when it appears, and select any image to be used.
 
 After importing the image, the Assigned Bones section will show all bones and
 what texture they're using (based on index). Since your bone isn't using any,
-click on it (or drag the texture to it) to assign it.
+click on it (or drag the texture to it) to assign it:
 
-[Assigned Bone img]
+![assigned_bones](assigned_bones.png)
 
-Close the Styles modal, and you should now see your bone with given texture.
+Close the Styles modal, and you should now see your bone with the given texture.
+
+![textured_bone](textured_bone.png)
 
 ## Parent & Child Bones
 
