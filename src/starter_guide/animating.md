@@ -66,5 +66,8 @@ around with them and see how the animation changes!
 
 The animation process is hopefully simple to grasp, as it is essentially
 recording edits and adjusting keyframes. Realistically however, an animation
-will contain lots of them. Spend some time creating more animations, and you
-will be a professional keyframe manager in no time!
+will contain lots of them. Try to make an expressive animation while keeping the
+keyframes organized!
+
+Next, we'll add your armature and play it's animations in
+pygame. Let's get it [runnin'](./inagame.md)!
