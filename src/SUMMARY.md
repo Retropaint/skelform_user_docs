@@ -8,4 +8,4 @@
   - [Using In a Game](./starter_guide/inagame.md)
   - [Finale](./starter_guide/finale.md)
 - [PSD Rigging](./psd.md)
-- [Using Runtimes](./runtimes.md)
+- [Runtime API](./runtime-api.md)
