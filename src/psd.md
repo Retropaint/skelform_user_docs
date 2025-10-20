@@ -1,8 +1,7 @@
 # PSD Rigging
 
-SkelForm supports importing and extracing Photoshop Document (PSD) files. The
-file is expected to have a specific structure, which will then be used to form a
-rig.
+SkelForm supports importing Photoshop Document (PSD) files to turn into an
+armature. To do this, a specific structure is needed.
 
 ## Table of Contents
 
@@ -26,6 +25,11 @@ it's texture:
 
 ![group](group.png)
 
+## Child Bones
+
+Groups in groups will be children, however they must be first in the hierarchy.
+They will be otherwise ignored if below a layer.
+
 ## Pivots
 
 By default, bones created from groups will not have a dedicated pivot parent,
@@ -43,3 +47,5 @@ be able to position it in your art program.
 When importing the PSD, that group should now be comprised of 2 bones: the main
 bone (pivot), and the texture. From here on out, it is recommended to only edit
 the main bone.
+
+## Inverse Kinematics
