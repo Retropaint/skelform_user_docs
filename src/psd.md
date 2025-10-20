@@ -1,3 +1,9 @@
+<style>
+  .ik-code {
+    margin: 0
+  }
+</style>
+
 # PSD Rigging
 
 SkelForm supports importing Photoshop Document (PSD) files to turn into an
@@ -49,3 +55,21 @@ bone (pivot), and the texture. From here on out, it is recommended to only edit
 the main bone.
 
 ## Inverse Kinematics
+
+Layers starting with `$ik_` will be used to set IK properties to their
+respective bones:
+
+Effectors:
+
+- <p class="ik-code"><code>$ik_start</code></p>
+- <p class="ik-code"><code>$ik_middle</code></p>
+- <p class="ik-code"><code>$ik_end</code></p>
+
+Constraints:
+
+- <p class="ik-code"><code>$ik_clockwise</code></p>
+- <p class="ik-code"><code>$ik_counterclockwise</code></p>
+
+![psd_ik](psd_ik.png)
+
+Once imported, a target bone will be automatically generated and assigned.
