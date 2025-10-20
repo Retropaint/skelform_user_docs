@@ -1,19 +1,18 @@
 # Before You Download...
 
-...check out the
-<a href="https://skelform.org/editor" target="_blank">Web
+...check out the <a href="https://skelform.org/editor" target="_blank">Web
 version</a> , which does not require downloading!
 
 Otherwise, read on.
 
 # Installation
 
-The SkelForm editor can be download from the main site's Download page.
+The SkelForm editor can be downloaded from the [site](https://skelform.org).
 
-It is only prvided as a portable program, and does not have an installer.
+It's only prvided as a portable program, and does not have an installer.
 
-Once it is downloaded, unzip/uncompress the zip file and open the SkelForm
-binary (SkelForm.exe on Windows).
+Once it's downloaded, unzip/uncompress the zip file and open the SkelForm binary
+(SkelForm.exe on Windows).
 
 If you see a screen like this, then all is good!
 

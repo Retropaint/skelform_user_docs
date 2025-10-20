@@ -7,6 +7,7 @@ SkelForm, and this documentation, are works in progress.
 
 ## Table of Contents
 
+- [Installation](./installation.md) - Installing SkelForm
 - [Starter Guide](./starter-guide/main.md) - Written guide on starting out with
   SkelForm, from the editor to the game
 - [PSD Rigging](./psd.md) - Guide and references for creating rigs out of PSD
