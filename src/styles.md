@@ -1,6 +1,6 @@
 # Styles
 
-Styles are groups of textures, and can be used to create skins/outfits.
+Styles are groups of textures, and can be used to create skins and/or outfits.
 
 One or multiple styles may be assigned to bones, which will use the
 corresponding texture based on index.

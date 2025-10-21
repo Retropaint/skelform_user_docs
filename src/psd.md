@@ -20,25 +20,25 @@ armature. To do this, a specific structure is needed.
 ## Sample File
 
 A sample PSD file may be
-[downloaded](https://github.com/Retropaint/SkelForm/blob/master/skellington.psd?raw=true)
+[downloaded](https://github.com/Retropaint/SkelForm/blob/master/samples/skellington.psd?raw=true)
 to be kept as a reference, and will automatically form a proper rig when
 imported in SkelForm.
 
-![sample_psd](sample_psd.png)
+![sample_psd](assets/sample_psd.png)
 
 ## Group > Bone, Layer(s) > Texture
 
 Bones are made out of groups, and all layers of a group will be merged to form
 it's texture:
 
-![group](group.png)
+![group](assets/group.png)
 
 ## Child Bones
 
 Groups in groups will be children, however they must be first in the hierarchy.
 Groups after a layer will be ignored.
 
-![psd_child_bones](psd_child_bones.png)
+![psd_child_bones](assets/psd_child_bones.png)
 
 ## Pivots
 
@@ -49,7 +49,7 @@ To add a dedicated pivot, create a layer specifically named
 <strong>$pivot</strong>, and make it a child of the group in question. The
 pivot's position will be based on the top-left corner of the layer:
 
-![pivot](pivot.png)
+![pivot](assets/pivot.png)
 
 Although this layer will be invisible in the rig, you may need to draw on it to
 be able to position it in your art program.
@@ -74,6 +74,6 @@ Constraints:
 - <p class="ik-code"><code>$ik_clockwise</code></p>
 - <p class="ik-code"><code>$ik_counterclockwise</code></p>
 
-![psd_ik](psd_ik.png)
+![psd_ik](assets/psd_ik.png)
 
 Once imported, a target bone will be automatically generated and assigned.

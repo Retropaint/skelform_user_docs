@@ -16,6 +16,6 @@ Once it's downloaded, unzip/uncompress the zip file and open the SkelForm binary
 
 If you see a screen like this, then all is good!
 
-![start_screen](start_screen.png)
+![start_screen](assets/start_screen.png)
 
 Let's get started and go through the [basics](./starter-guide/basics.md).
