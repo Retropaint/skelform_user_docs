@@ -10,3 +10,4 @@
 - [PSD Rigging](./psd.md)
 - [Runtime API](./runtime-api.md)
 - [Styles](./styles.md)
+- [Inverse Kinematics](./inverse-kinematics.md)
