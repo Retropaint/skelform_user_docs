@@ -23,14 +23,14 @@ Bones must be ordered such that each connecting joint will be the child of the
 other. There can be as many children within a bone, but only one of them can be
 connected via IK.
 
-[order img]
+![inverse kinematics bone order](assets/ik_bone_order.png)
 
 ## Families and Indexes
 
 Select any bone to be part of IK, and click `New` in the `Family Index` dropdown
 in the **Bone** panel:
 
-[family idx img]
+![family index dropdown](assets/family_idx.png)
 
 This will create a new family (group) of joints, along with other options.
 Assign other bones to be part of the same family with the same index.
@@ -38,7 +38,7 @@ Assign other bones to be part of the same family with the same index.
 In the image below, bones with IK in their name are all set to the same family
 index (0):
 
-[IK family img]
+![Full inverse kinematics family setup](assets/full_ik_family.png)
 
 ## Target Bone
 
@@ -59,9 +59,8 @@ can be undesirable for eg; shoulders or legs, which can only bend one way.
 
 Clicking on the first bone of an IK family will show the `Constraint:` option:
 
-[constraint img]
+![Constraint options](assets/constraints.png)
 
-Select CW (clockwise) or CCW (counter-clockwise). The names are based on the
-direction of the joints as though they were vectors:
-
-[vector dir img]
+The names come from the directions represented by the arrows. In practice it's
+not required to know which to use in advance. Simply test both to find what's
+appropriate.
