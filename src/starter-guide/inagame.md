@@ -119,7 +119,6 @@ Underneath `#3`, paste this:
 ```python
 drawn_bones = skelform_pygame.animate(
     skf_root.armature,
-    textureAtlas,
     [skf_root.armature.animations[0]],
     [frame],
     screen,
