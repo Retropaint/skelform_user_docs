@@ -64,6 +64,8 @@ dragged around. Try dragging either the diamonds at the top of the keyframe
 editor, or the icons that correspond to their field. The animation will be
 changed to reflect their places in the timeline.
 
+<img src="dragging_keyframe.png" alt="dragging_keyframe" style="width: 15rem">
+
 Clicking a diamond will also 'select' the keyframe. The right panel will show
 extra information about the selected keyframe, along with some options. Play
 around with them and see how the animation changes!
