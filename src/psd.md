@@ -12,8 +12,10 @@ armature. To do this, a specific structure is needed.
 ## Table of Contents
 
 - [Sample File](#sample-file)
-- [Main Structure](#main-structure)
+- [Group > Bone, Layer(s) > Texture](#group--bone-layers--texture)
+- [Child Bones](#child-bones)
 - [Pivots](#pivots)
+- [Inverse Kinematics](#inverse-kinematics)
 
 ## Sample File
 
@@ -24,7 +26,7 @@ imported in SkelForm.
 
 ![sample_psd](sample_psd.png)
 
-## Main Structure
+## Group > Bone, Layer(s) > Texture
 
 Bones are made out of groups, and all layers of a group will be merged to form
 it's texture:
@@ -34,7 +36,9 @@ it's texture:
 ## Child Bones
 
 Groups in groups will be children, however they must be first in the hierarchy.
-They will be otherwise ignored if below a layer.
+Groups after a layer will be ignored.
+
+![psd_child_bones](psd_child_bones.png)
 
 ## Pivots
 
