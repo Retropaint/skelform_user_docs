@@ -1,3 +1,9 @@
+<style>
+  .content img {
+    width: 30rem
+  }
+</style>
+
 # Inverse Kinematics
 
 Armatures with limbs (shoulders, legs, etc) can use inverse kinematics to
