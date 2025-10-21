@@ -1,7 +1,7 @@
 # Introduction
 
 SkelForm is a 2D skeletal animator, designed for games. To run in said games,
-runtimes are provided and being developed for many game engines.
+runtimes are provided for select game engines.
 
 SkelForm, and this documentation, are works in progress.
 
