@@ -60,14 +60,17 @@ the main bone.
 
 ## Inverse Kinematics
 
+_See: [Inverse Kinematics](./inverse-kinematics.md)_
+
 Layers starting with `$ik_` will be used to set IK properties to their
-respective bones:
+respective bones.
 
-Effectors:
+Family id format: `$ik_X`
 
-- <p class="ik-code"><code>$ik_start</code></p>
-- <p class="ik-code"><code>$ik_middle</code></p>
-- <p class="ik-code"><code>$ik_end</code></p>
+Examples:
+
+- <p class="ik-code"><code>$ik_0</code></p>
+- <p class="ik-code"><code>$ik_1</code></p>
 
 Constraints:
 
