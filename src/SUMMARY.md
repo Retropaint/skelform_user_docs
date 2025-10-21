@@ -9,3 +9,4 @@
   - [Bonus: Using In a Game](./starter-guide/inagame.md)
 - [PSD Rigging](./psd.md)
 - [Runtime API](./runtime-api.md)
+- [Styles](./styles.md)
