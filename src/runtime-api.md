@@ -36,7 +36,7 @@ animation, with options like reversing or looping.
 
 If first animation has 14 frames, `frame` will be 6 (since loop is true).
 
-`frame` will be used later for `animate()`.
+`frame` will be used later for [`animate()`](#function-animate).
 
 <h3 id="function-time-frame"><a class="header" href="#function-time-frame">Function <code>timeFrame(time, animation, reverse, loop)</code></a></h3>
 
@@ -45,7 +45,7 @@ frame := timeFrame(time.Duration(), armature.Animations[0], false, true)
 ```
 
 A helper function to format the provided time into a usable frame for the
-animation, with the same options as `formatFrame()`:
+animation, with the same options as [`formatFrame()`](#function-format-frame):
 
 Assuming:
 
@@ -68,7 +68,7 @@ drawnBones := animate(armature, [armature.Animations[0]], [frame], animOptions)
 Takes the armature, as well as the animation(s) and frame(s). The bones in the
 armature are then processed accordingly.
 
-Returns a new set of bones to be later drawn via `draw()`.
+Returns a new set of bones to be later drawn via [`draw()`](#function-draw).
 
 Additional options may be given such as speed, transform modifiers, and blending
 (per animation).
@@ -84,8 +84,8 @@ draw(drawnBones, armature.Styles, texture)
 
 Draw the provided bones on-screen.
 
-The bones provided must be from `animate()`. It cannot be the armature's bones
-directly.
+The bones provided must be from [`animate()`](#function-animate). It cannot be
+the armature's bones directly.
 
-The `???` parameter is dependent on the engine, but usually just requires
-passing the renderer.
+The `???` parameter is engine-dependent, but usually just requires passing the
+renderer.
