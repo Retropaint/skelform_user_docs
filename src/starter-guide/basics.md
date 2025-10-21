@@ -45,7 +45,7 @@ Multiple can be made for outfits and skins, but we'll just use one for now.
 To add a Style, click on the `Styles` dropdown next to `New Bone`, or in the
 bone panel. Click `[Setup]` within to open up the Styles modal:
 
-![styles_modal](styles_modal.png)
+![styles_modal](../assets/styles_modal.png)
 
 From here, click on `New Style` and give it a name. Click `Import` next to
 Texture when it appears, and select any image to be used.
@@ -54,11 +54,11 @@ After importing the image, the Assigned Bones section will show all bones and
 what texture they're using (based on index). Since your bone isn't using any,
 click on it (or drag the texture to it) to assign it:
 
-![assigned_bones](assigned_bones.png)
+![assigned_bones](../assets/assigned_bones.png)
 
 Close the Styles modal, and you should now see your bone with the given texture.
 
-![textured_bone](textured_bone.png)
+![textured_bone](../assets/textured_bone.png)
 
 ## Parent & Child Bones
 
@@ -73,7 +73,7 @@ transformed, which will be useful for joints and such.
 Create another bone, give it a texture (as in the
 [above step](#adding-a-texture-and-style)), then drag either bone to the other:
 
-![highlight_bone](highlight_bone.png)
+![highlight_bone](../assets/highlight_bone.png)
 
 Once released, the bone you held will be the child of the other!
 

@@ -70,7 +70,7 @@ _Courtesy of https://www.pygame.org/docs/tut/newbieguide.html_
 Run the file with `python game.py` (or `python3`). If you see a black window
 with `pygame window` at the top, then you're all set!
 
-![pygame_window](pygame_window.png)
+![pygame_window](../assets/pygame_window.png)
 
 Lines that look like `#1 - load armature` will be used to guide you along the
 way.
@@ -143,7 +143,7 @@ This will draw the bones on screen. Finally!
 Let's see it in action. Run the file, and you should see your armature being
 animated!
 
-![pygame_armature](pygame_armature.png)
+![pygame_armature](../assets/pygame_armature.png)
 
 ...and that's it!
 

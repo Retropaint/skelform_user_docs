@@ -30,7 +30,7 @@ the default name.
 
 The animation editor should appear:
 
-![keyframe_editor](keyframe_editor.png)
+![keyframe_editor](../assets/keyframe_editor.png)
 
 Let's get to animating!
 
@@ -39,7 +39,7 @@ Let's get to animating!
 Click on a line anywhere in the animation editor. Edit the bone in any way
 (moving, scaling, etc), and you should see it appear in the animation editor:
 
-![keyframe_editor_edit](keyframe_editor_edit.png)
+![keyframe_editor_edit](../assets/keyframe_editor_edit.png)
 
 This means that your edit has been recorded!
 
@@ -64,7 +64,7 @@ dragged around. Try dragging either the diamonds at the top of the keyframe
 editor, or the icons that correspond to their field. The animation will be
 changed to reflect their places in the timeline.
 
-<img src="dragging_keyframe.png" alt="dragging_keyframe" style="width: 15rem">
+<img src="../assets/dragging_keyframe.png" alt="dragging_keyframe" style="width: 15rem">
 
 Clicking a diamond will also 'select' the keyframe. The right panel will show
 extra information about the selected keyframe, along with some options. Play
