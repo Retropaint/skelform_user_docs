@@ -61,7 +61,7 @@ The family will now follow, or point to, the target bone.
 ## Constraints
 
 By default, IK families will bend however they can to reach their target. This
-can be undesirable for eg; shoulders or legs, which can only bend one way.
+could be undesirable for eg; shoulders or legs, which should only bend one way.
 
 Clicking on the first bone of an IK family will show the `Constraint:` option:
 
