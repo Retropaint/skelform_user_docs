@@ -14,7 +14,8 @@ Styles can be accessed via the dropdown next to the `New Bone` button in the
 - [Styles Modal](#styles-modal)
   - [Styles Section](#styles-section)
   - [Textures Section](#textures-section)
-  - [Assigned Bones Section](#assigned-bones-section)
+  - [Bones Section](#assigned-bones-section)
+  - [Assigned Textures Section](#assigned-textures-section)
 - [Style Visibility](#styles-visibility)
 - [Style Priority](#styles-priority)
 - [Changing Per Bone](#changing-per-bone)
@@ -23,6 +24,8 @@ Styles can be accessed via the dropdown next to the `New Bone` button in the
 
 The Styles modal can be opened via the `[Setup]` option in styles dropdowns, and
 comprises 3 sections:
+
+![styles_modal](../assets/styles_modal_filled.png)
 
 ### Styles Section
 
@@ -34,21 +37,25 @@ This section will display details of a hovered texture in the textures section.
 
 ### Textures Section
 
-Lists all textures of the selected Style.
+Bones with the same name as the texture will automatically use it, assuming
+style priority.
 
-All textures will have indices in front of their names, starting with `0)`.
-Bones will use the corresponding texture based on index.
+Textures can be renamed by double clicking.
 
-This section will display all textures of a hovered style in the styles section.
+If a different style is hovered in the Style section, this list will instead
+show all textures in it.
 
-### Assigned Bones Section
+### Bones Section
 
-Lists all bones and their assigned texture index (if said bone uses the selected
-style).
+Simply lists bones. Helps with the section to the right (assigned textures).
 
-Clicking on a bone will either add or remove it from the style. It's texture
-index can be changed with either the dropdown to the right, or by dragging a
-texture onto it.
+Dragging a texture on a bone will set it as the bone's texture.
+
+### Assigned Textures Section
+
+Lists the assigned textures of the corresponding bone to the left.
+
+Clicking on them will open a dropdown to select a texture from the chosen style.
 
 ## Style Visibility
 
@@ -58,14 +65,11 @@ in the styles modal.
 Bones will ignore hidden styles, and will be untextured if it's the only one
 they have.
 
+![hidden styles](../assets/hidden_styles.png)
+
 ## Style Priority
 
-Bones with multiple selected styles will use the first visible one in the list.
+Bones will always use the texture of the same name in the first active style in
+the list.
 
-## Changing Per Bone
-
-The bone panel displays the selected bone's selected styles and texture index.
-Clicking on a style in the styles dropdown will toggle it for this bone only.
-
-While this doesn't allow for adding new styles/textures, it can be great for
-quick edits over opening the styles modal.
+The order of styles can be changed by dragging them.
