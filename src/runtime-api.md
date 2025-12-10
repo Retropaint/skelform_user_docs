@@ -10,8 +10,8 @@ For _developing_ runtimes, please see the
 ## Functions
 
 - [`Load()`](#load)
-- [`FormatFrame()`](#format-frame)
-- [`timeFrame()`](#time-frame)
+- [`FormatFrame()`](#formatframe)
+- [`timeFrame()`](#timeframe)
 - [`animate()`](#animate)
 - [`draw()`](#draw)
 
