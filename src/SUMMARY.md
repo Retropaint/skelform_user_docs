@@ -11,3 +11,4 @@
 - [Runtime API](./runtime-api.md)
 - [Styles](./styles.md)
 - [Inverse Kinematics](./inverse-kinematics.md)
+- [Mesh Deformation](./mesh-deformation.md)

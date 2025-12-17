@@ -5,7 +5,7 @@ version</a> , which does not require downloading!
 
 Otherwise, read on.
 
-# Installation
+## Installation
 
 The SkelForm editor can be downloaded from the [site](https://skelform.org).
 

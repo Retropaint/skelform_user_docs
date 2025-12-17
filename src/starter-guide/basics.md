@@ -12,9 +12,9 @@ tour around the editor.
   - [Parent-Child Bone Inheritance](#parent-child-bone-inheritance)
   - [Pivots & Hinges](#pivots--hinges)
 
-## The Camera (Moving & Zooming)
+## Moving & Zooming the Camera
 
-Move the camera by holding left click and dragging the mouse.
+Hold Ctrl/CMD while dragging the mouse to move the camera.
 
 Zoom in/out with the scroll wheel or -/+ keys. On a touchpad, drag 2 fingers
 up/down.
@@ -30,9 +30,6 @@ position, scale, etc., and can be edited.
 The bone can be edited by dragging the mouse while holding left-click. The field
 being edited is based on the top-left bar's selection (<strong>Move</strong>,
 <strong>Scale</strong>, <strong>Rotate</strong>).
-
-The camera can still be moved by holding Ctrl/CMD while dragging. This is only
-required if a bone is selected.
 
 ## Adding a Texture (and Style)
 
@@ -51,7 +48,7 @@ From here, click on `New Style` and give it a name. Click `Import` next to
 Texture when it appears, and select any image to be used.
 
 After importing the image, the Assigned Bones section will show all bones and
-what texture they're using (based on index). Since your bone isn't using any,
+what texture they're using (based on name). Since your bone isn't using any,
 click on it (or drag the texture to it) to assign it:
 
 ![assigned_bones](../assets/assigned_bones.png)
