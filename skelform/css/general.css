@@ -14,15 +14,6 @@ html {
     -webkit-text-size-adjust: none;
 }
 
-figure {
-    margin-left: 0;
-}
-
-figcaption {
-    margin-left: 0.25rem;
-    font-size: 1.5rem;
-}
-
 body {
     margin: 0;
     font-size: 1.6rem;
@@ -58,21 +49,6 @@ h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
 
 h2, h3 { margin-block-start: 2.5em; }
 h4, h5 { margin-block-start: 2em; }
-
-h2, h3 {
-    padding-left: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.4rem;
-}
-
-h2 {
-    background: linear-gradient(90deg, rgb(53, 39, 74) 50%, transparent 100%);
-}
-
-h3 {
-    width: 50%;
-    background: linear-gradient(90deg, rgb(53, 39, 74) 0%, transparent 100%);
-}
 
 .header + .header h3,
 .header + .header h4,
@@ -429,4 +405,31 @@ dd > p {
     fill: currentColor;
     /* Add some space between the icon and the text. */
     margin-right: 8px;
+}
+
+/* Custom */
+
+
+h2, h3 {
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.4rem;
+}
+
+h2 {
+    background: linear-gradient(90deg, rgb(53, 39, 74) 50%, transparent 100%);
+}
+
+h3 {
+    width: 50%;
+    background: linear-gradient(90deg, rgb(53, 39, 74) 0%, transparent 100%);
+}
+
+figure {
+    margin-left: 0;
+}
+
+figcaption {
+    margin-left: 0.25rem;
+    font-size: 1.5rem;
 }

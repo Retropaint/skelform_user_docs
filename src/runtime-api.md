@@ -11,9 +11,9 @@ For _developing_ runtimes, please see the
 
 - [`Load()`](#load)
 - [`FormatFrame()`](#formatframe)
-- [`timeFrame()`](#timeframe)
-- [`animate()`](#animate)
-- [`draw()`](#draw)
+- [`TimeFrame()`](#timeframe)
+- [`Animate()`](#animate)
+- [`Draw()`](#draw)
 
 ## `Load()`
 
@@ -45,7 +45,7 @@ frame: int = TimeFrame(time.duration(), armature.animations[0], false, true)
 ```
 
 A helper function to format the provided time into a usable frame for the
-animation, with the same options as [`formatFrame()`](#function-format-frame):
+animation, with the same options as [`formatFrame()`](#function-format-frame).
 
 Assuming:
 
