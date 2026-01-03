@@ -8,6 +8,8 @@ _This section assumes you have a basic understanding of using the command prompt
 and/or terminal. Engines with a graphical editor are not supported at the time
 of writing._
 
+_Pygame does not supoprt mesh deformation at the time of writing._
+
 ## Table of Contents
 
 - [Setup](#setup)
@@ -58,7 +60,9 @@ while True:
 
     #3 - animate
 
-    #4 - draw
+    #4 - construct
+
+    #5 - draw
 
     pygame.display.flip()
     clock.tick(120)
@@ -83,8 +87,8 @@ We'll need to load the armature to use it. `skelform_pygame` provides a handy
 Underneath `#1`, paste this:
 
 ```python
-file_name = "skellington.skf"
-(skf_root, textureAtlas) = skelform_pygame.load(file_name)
+file_name = "skellina.skf"
+(skellina, texAtlas) = skelform_pygame.load(file_name)
 ```
 
 Edit `file_name` to be the name of the .skf file that you exported.
@@ -102,7 +106,7 @@ Underneath `#2`, paste this:
 ```python
 frame = skelform_pygame.time_frame(
     time,
-    skf_root.armature.animations[0],
+    skellina.animations[0],
     False,
     True
 )
@@ -117,25 +121,43 @@ Now we can process the armature for our first animation.
 Underneath `#3`, paste this:
 
 ```python
-drawn_bones = skelform_pygame.animate(
-    skf_root.armature,
-    [skf_root.armature.animations[0]],
+skellina.bones = skelform_pygame.animate(
+    skellina,
+    [skellina.animations[0]],
     [frame],
-    screen,
-    skelform_pygame.AnimOptions(
-        pygame.Vector2(screen.width/2, screen.height/2)
-    ),
+    [0] # blend frames
 )
 ```
 
-This will process the first animation at the specified frame, with the armature
-being positioned at the center of the screen. We're also given a new set of
-bones, which will be drawn on-screen.
+This will move all bones accordingly with the first animation. Note the last
+array, which are the blend frames. These are used to smoothly transition from
+one animation to the other. For now we'll leave this at 0.
 
 Underneath `#4`, paste this:
 
 ```python
-skelform_pygame.draw(drawn_bones, skf_root.armature.styles, textureAtlas, screen)
+constructed_bones = skelform_pygame.construct(
+    skellina,
+    screen,
+    skelform_pygame.AnimOptions(
+        pygame.Vector2(screen.get_width()/2, screen.get_height()/2)
+    ),
+)
+```
+
+This will give us the final result of bones, where we can also apply
+modifications (eg; change the position). Here, we've offset all bones to the
+center of the screen.
+
+Underneath `#5`, paste this:
+
+```python
+skelform_pygame.draw(
+    drawn_bones,
+    skellina.styles,
+    textureAtlas,
+    screen
+)
 ```
 
 This will draw the bones on screen. Finally!
@@ -156,6 +178,7 @@ when pressing the left or right arrow keys!
 This the final code with the above steps included:
 
 ```python
+
 import pygame
 import skelform_pygame
 
@@ -167,8 +190,8 @@ clock = pygame.time.Clock()
 time = 0
 
 #1 - load armature
-file_name = "skellington.skf"
-(skf_root, textureAtlas) = skelform_pygame.load(file_name)
+file_name = "skellina.skf"
+(skellina, texAtlas) = skelform_pygame.load(file_name)
 
 while True:
     for event in pygame.event.get():
@@ -180,25 +203,35 @@ while True:
     #2 - get frame
     frame = skelform_pygame.time_frame(
         time,
-        skf_root.armature.animations[0],
+        skellina.animations[0],
         False,
         True
     )
 
     #3 - animate
-    drawn_bones = skelform_pygame.animate(
-        skf_root.armature,
-        textureAtlas,
-        [skf_root.armature.animations[0]],
+    skelform_pygame.animate(
+        skellina,
+        [skellina.animations[0]],
         [frame],
+        [20]
+    )
+
+    #4. construct
+    constructed_bones = skelform_pygame.construct(
+        skellina,
         screen,
         skelform_pygame.AnimOptions(
-            pygame.Vector2(screen.width/2, screen.height/2)
+            pygame.Vector2(screen.get_width()/2, screen.get_height()/2)
         ),
     )
 
     #4 - draw
-    skelform_pygame.draw(drawn_bones, skf_root.armature.styles, textureAtlas, screen)
+    skelform_pygame.draw(
+        constructed_bones,
+        skellina.styles,
+        texAtlas,
+        screen
+    )
 
     pygame.display.flip()
     clock.tick(120)
